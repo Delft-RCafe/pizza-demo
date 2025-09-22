@@ -3,7 +3,7 @@
 ## Requirements
 
 1. Install [Quarto](https://quarto.org/docs/get-started/)
-    a. Install a TeX compiler if needed (this can be done with Quarto: `quarto install tinytex`)
+    - Install a TeX compiler if needed (this can be done with Quarto: `quarto install tinytex`)
 2. Install [R](https://cran.r-project.org/)
 
 ## Render manuscript
