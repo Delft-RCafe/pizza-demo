@@ -1,0 +1,140 @@
+---
+title: "Is Pizza the Secret Super‑Food? A Light‑Hearty Investigation"
+format:
+  plos-pdf:
+    number-sections: false
+    journal:
+      id: plosone
+author:
+  - name: Name1 Surname
+    equal-contributor: true
+    affiliations:
+      - ref: aff1
+      - ref: aff2
+  - name: Name2 Surname
+    equal-contributor: true
+    affiliations:
+      - ref: aff2
+    notes: |
+      "Current Address: Dept/Program/Center, Institution Name, City, State, Country"
+    corresponding: true
+    email: correspondingauthor@institute.edu
+  - name: with the Lorem Ipsum Consortium
+    group: true
+author-notes:
+  equal-contributor: These authors contributed equally to this work.
+  group: Membership list can be found in the Acknowledgments sections
+affiliations:
+  - id: aff1
+    name: Affiliation Dept, Institution Name
+    city: City
+    state: State
+    country: Country
+  - id: aff2
+    name: Affiliation Center, Institution Name
+    city: City
+    state: State
+    country: Country
+abstract: |
+  Pizza is beloved worldwide, but does it confer health benefits—or hidden hazards?
+  Leveraging a handful of epidemiological studies, we humorously explore whether
+  pizza protects against cancer, triggers heart attacks, or even influences scrotal
+  temperature. Spoiler: the answer is *mostly* "it depends on how much cheese you
+  tolerate."
+author-summary: |
+  Pizza is beloved worldwide, but does it confer health benefits—or hidden hazards?
+  Leveraging a handful of epidemiological studies, we humorously explore whether
+  pizza protects against cancer, triggers heart attacks, or even influences scrotal
+  temperature. Spoiler: the answer is *mostly* "it depends on how much cheese you
+  tolerate."
+keywords: |
+  pizza, epidemiology, cancer, cardiovascular disease
+bibliography: pizza-refs.bib          # rename the uploaded file accordingly
+csl: apa.csl                           # optional; APA style works well for jokes
+---
+
+## Introduction
+
+Pizza has long been celebrated as a culinary masterpiece, yet scientists continue to
+debate its role in human health. Some claim it wards off cancer, others warn of
+cardiovascular peril, and a lone study even suggests it might affect scrotal
+temperature. In this brief, tongue‑in‑cheek review we synthesize the evidence
+and ask the ultimate question: **Can pizza be considered a super‑food?**  
+
+## Methods
+
+We performed a *literature‑based narrative synthesis* of four peer‑reviewed
+articles that examined pizza consumption and various health outcomes
+([@gallusDoesPizza2003]; [@gallusPizzaConsumption2006];
+[@gallusPizzaRisk2004]; [@bengoudifaThermalAsymmetry2007]).
+No new data were collected; instead we extracted the reported odds ratios
+and hazard ratios, converting them into a whimsical “pizza‑score” ranging from
+0 (dangerous) to 10 (deliciously protective).
+
+## Results
+
+### Cancer Protection?
+
+Gallus et al. (2003) reported markedly reduced odds of several digestive‑tract
+cancers among regular pizza eaters (OR: 0.4-0.7) [@gallusDoesPizza2003].
+Conversely, later work by the same group found no meaningful association with
+breast, ovarian, or prostate cancer (OR: 0.9-1.1) [@gallusPizzaConsumption2006].
+
+> **Pizza‑Score (Cancer)**: 6/10 – good for some cancers, neutral for others.
+
+### Cardiovascular Risks
+
+In a modest Italian case‑control study, pizza consumption was linked to a
+non‑significant increase in acute myocardial infarction risk (RR: 1.1) [@gallusPizzaRisk2004].
+Given the wide confidence intervals, the result is best described as “maybe”.
+
+> **Pizza‑Score (Heart)**: 5/10 – borderline, depends on topping choices.
+
+### Scrotal Temperature Asymmetry
+
+An unexpected side‑effect emerged in a study of scrotal thermoregulation:
+men wearing clothing (including pizza‑themed aprons?) exhibited a left‑right
+temperature asymmetry, which the authors speculated could influence genital
+development [@bengoudifaThermalAsymmetry2007]. While the link to pizza is purely
+speculative, it adds a quirky twist to our narrative.
+
+> **Pizza‑Score (Reproductive)**: 3/10 – a little hot, a little cold.
+
+## Random “Why a Pie Chart?” Plot
+
+Because nothing says “serious science” like a **pie chart of favorite pizza toppings**.  
+Below we generate a random distribution of five classic toppings and display it as a pie chart.
+
+```{r}
+#| label: fig-pizza
+#| echo: false
+#| fig-cap: Favorite pizza toppings
+set.seed(123)
+toppings <- c("Pepperoni", "Mushrooms", "Olives", "Extra Cheese", "Veggies")
+counts  <- sample(10:30, length(toppings), replace = TRUE)
+
+# Basic pie chart (base R)
+pie(counts,
+    labels = paste0(toppings, " (", counts, ")"),
+    col = rainbow(length(toppings)),
+    main = "Favorite Pizza Toppings")
+```
+
+
+## Discussion
+
+Putting the pieces together, pizza appears moderately protective against certain gastrointestinal cancers, neutral for hormone‑related cancers, questionably risky for heart disease, and mysteriously warm for the scrotum. The heterogeneity likely reflects differences in:
+
+    Pizza composition – thin‑crust versus deep‑dish, tomato sauce versus extra cheese.
+    Lifestyle confounders – pizza lovers may also enjoy wine, exercise, or late‑night video games.
+    Geographic variation – Italian versus North‑American pizza habits differ substantially.
+
+From a practical standpoint, the safest recommendation is to enjoy pizza in moderation, opt for whole‑grain crusts, load up on vegetable toppings, and perhaps skip the extra cheese if you’re prone to heart issues.
+Conclusion
+
+Our playful synthesis suggests that pizza can be part of a balanced diet, especially when paired with sensible lifestyle choices. Whether it truly protects against cancer remains an open (and delicious) question—one that future randomized trials may finally settle.
+References
+
+## References cited
+
+<!-- The bibliography will be auto‑generated here -->
